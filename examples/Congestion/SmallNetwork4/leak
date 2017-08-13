@@ -1,0 +1,54 @@
+==2653== 319,558,402 (555,920 direct, 319,002,482 indirect) bytes in 69,490 blocks are definitely lost in loss record 1,011 of 1,013
+==2653==    at 0x4C29180: operator new(unsigned long) (vg_replace_malloc.c:324)
+==2653==    by 0x10A5B9B3: __gnu_cxx::new_allocator<Data*>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==2653==    by 0x10A5B80F: std::allocator_traits<std::allocator<Data*> >::allocate(std::allocator<Data*>&, unsigned long) (alloc_traits.h:357)
+==2653==    by 0x10A5B653: std::_Vector_base<Data*, std::allocator<Data*> >::_M_allocate(unsigned long) (stl_vector.h:170)
+==2653==    by 0x10A5B133: void std::vector<Data*, std::allocator<Data*> >::_M_emplace_back_aux<Data* const&>(Data* const&) (vector.tcc:412)
+==2653==    by 0x10A5AE2C: std::vector<Data*, std::allocator<Data*> >::push_back(Data* const&) (stl_vector.h:923)
+==2653==    by 0x10A5A97B: PDUData::encapsulate(Data*) (PDUData.cc:63)
+==2653==    by 0x10A5CED0: Delimiting::processMsgFromFAI(SDUData*) (Delimiting.cc:184)
+==2653==    by 0x10A5C6F7: Delimiting::handleMessage(omnetpp::cMessage*) (Delimiting.cc:93)
+==2653==    by 0x60B9656: omnetpp::cSimulation::doMessageEvent(omnetpp::cMessage*, omnetpp::cSimpleModule*) (csimulation.cc:692)
+==2653==    by 0x60B932F: omnetpp::cSimulation::executeEvent(omnetpp::cEvent*) (csimulation.cc:634)
+==2653==    by 0x4E4089F: omnetpp::cmdenv::Cmdenv::simulate() (cmdenv.cc:396)
+==2653== 
+==2653== 385,768,383 (58,289,504 direct, 327,478,879 indirect) bytes in 280,238 blocks are definitely lost in loss record 1,012 of 1,013
+==2653==    at 0x4C29180: operator new(unsigned long) (vg_replace_malloc.c:324)
+==2653==    by 0x10A5CE2A: Delimiting::processMsgFromFAI(SDUData*) (Delimiting.cc:179)
+==2653==    by 0x10A5C6F7: Delimiting::handleMessage(omnetpp::cMessage*) (Delimiting.cc:93)
+==2653==    by 0x60B9656: omnetpp::cSimulation::doMessageEvent(omnetpp::cMessage*, omnetpp::cSimpleModule*) (csimulation.cc:692)
+==2653==    by 0x60B932F: omnetpp::cSimulation::executeEvent(omnetpp::cEvent*) (csimulation.cc:634)
+==2653==    by 0x4E4089F: omnetpp::cmdenv::Cmdenv::simulate() (cmdenv.cc:396)
+==2653==    by 0x4E40271: omnetpp::cmdenv::Cmdenv::doRun() (cmdenv.cc:276)
+==2653==    by 0x5134673: omnetpp::envir::EnvirBase::run() (envirbase.cc:580)
+==2653==    by 0x5132C2D: omnetpp::envir::EnvirBase::run(int, char**, omnetpp::cConfiguration*) (envirbase.cc:300)
+==2653==    by 0x512BFCD: omnetpp::envir::setupUserInterface(int, char**) (startup.cc:235)
+==2653==    by 0x512CE92: evMain (evmain.cc:40)
+==2653==    by 0x401C0B: main (opp_run.cc:290)
+==2653== 
+==2653== 497,746,233 (74,009,000 direct, 423,737,233 indirect) bytes in 370,045 blocks are definitely lost in loss record 1,013 of 1,013
+==2653==    at 0x4C29180: operator new(unsigned long) (vg_replace_malloc.c:324)
+==2653==    by 0x10AB4601: RMTPort::handleMessage(omnetpp::cMessage*) (RMTPort.cc:145)
+==2653==    by 0x60B9656: omnetpp::cSimulation::doMessageEvent(omnetpp::cMessage*, omnetpp::cSimpleModule*) (csimulation.cc:692)
+==2653==    by 0x60B932F: omnetpp::cSimulation::executeEvent(omnetpp::cEvent*) (csimulation.cc:634)
+==2653==    by 0x4E4089F: omnetpp::cmdenv::Cmdenv::simulate() (cmdenv.cc:396)
+==2653==    by 0x4E40271: omnetpp::cmdenv::Cmdenv::doRun() (cmdenv.cc:276)
+==2653==    by 0x5134673: omnetpp::envir::EnvirBase::run() (envirbase.cc:580)
+==2653==    by 0x5132C2D: omnetpp::envir::EnvirBase::run(int, char**, omnetpp::cConfiguration*) (envirbase.cc:300)
+==2653==    by 0x512BFCD: omnetpp::envir::setupUserInterface(int, char**) (startup.cc:235)
+==2653==    by 0x512CE92: evMain (evmain.cc:40)
+==2653==    by 0x401C0B: main (opp_run.cc:290)
+==2653== 
+==2653== LEAK SUMMARY:
+==2653==    definitely lost: 257,747,664 bytes in 1,833,525 blocks
+==2653==    indirectly lost: 1,284,759,562 bytes in 5,407,062 blocks
+==2653==      possibly lost: 233,440,955 bytes in 1,147,705 blocks
+==2653==    still reachable: 121,512,496 bytes in 602,883 blocks
+==2653==         suppressed: 0 bytes in 0 blocks
+==2653== Reachable blocks (those to which a pointer was found) are not shown.
+==2653== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==2653== 
+==2653== For counts of detected and suppressed errors, rerun with: -v
+==2653== Use --track-origins=yes to see where uninitialised values come from
+==2653== ERROR SUMMARY: 530 errors from 443 contexts (suppressed: 0 from 0)
+

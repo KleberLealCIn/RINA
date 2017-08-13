@@ -1,0 +1,16 @@
+_01-Cubic-10Mbps-1ms-536B
+_02-Cubic-10Mbps-1ms-1500B
+_03-Cubic-10Mbps-100ms-536B
+_04-Cubic-10Mbps-100ms-1500B
+_05-Cubic-100Mbps-1ms-536B
+_06-Cubic-100Mbps-1ms-1500B
+_07-Cubic-100Mbps-100ms-536B
+_08-Cubic-100Mbps-100ms-1500B
+_09-Reno-10Mbps-1ms-536B
+_10-Reno-10Mbps-1ms-1500B
+_11-Reno-10Mbps-100ms-536B
+_12-Reno-10Mbps-100ms-1500B
+_13-Reno-100Mbps-1ms-536B
+_14-Reno-100Mbps-1ms-1500B
+_15-Reno-100Mbps-100ms-536B
+_16-Reno-100Mbps-100ms-1500B
